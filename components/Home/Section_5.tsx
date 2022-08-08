@@ -9,7 +9,8 @@ const Section_5 = () => {
   const [email, setEmail] = useState('');
   const router = useRouter();
 
-  const registerForWaitlist = async (e:any) => {
+  const registerForWaitlist = async (e: any) => {
+    console.log(process.env.API);
     e.preventDefault();
     try {
       const response = await axios.post('/backend/waitlist/register', {
