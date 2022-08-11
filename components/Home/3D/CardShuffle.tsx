@@ -56,7 +56,7 @@ const Card = (props: ThreeElements['mesh'] | any) => {
                 <Slide heading={"Deep liquidity"} para={"Enjoy consolidated liquidity of the options market into a single instrument"} img={"https://cdn.iconscout.com/icon/premium/png-256-thumb/liquidity-2-1177839.png"} />
               ) :
                 (
-                  <Slide heading={"Earn Interest"} para={"Receive a fee every hour based on the funding rate + ve funding rate: Shorts earn interest -ve funding rate: Longs earn interest"} img={"https://cdn.iconscout.com/icon/premium/png-256-thumb/liquidity-2-1177839.png"} />
+                  <Slide heading={"Real yield"} para={"If you short a power perp, you will receive an amount every hour based on the premium yield"} img={"https://cdn.iconscout.com/icon/premium/png-256-thumb/liquidity-2-1177839.png"} />
                 )
           }
         </button>

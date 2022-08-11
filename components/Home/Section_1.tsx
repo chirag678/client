@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import notify from '../../utils/notify'
 import PriceActionGraph from './Misc/PriceActionGraph'
-import PriceActionGraph2 from './Misc/PriceActionGraph2'
 
 // Headings : DeFi -> Derivatives -> NFTs -> Perpetuals -> Crypto
 const headings = [

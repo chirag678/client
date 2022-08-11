@@ -12,8 +12,8 @@ import RotatingBoxes from './3D/RotatingBoxes'
 
 const points = [
   { title: 'No gas', description: 'Deposit funds and say goodbye to gas', icon: '/icons/no.svg' },
-  { title: 'Minimal fees', description: 'Pay 4x lesser fees than trading on other top exchanges.', icon: '/icons/no.svg' },
-  { title: 'Maximum security', description: 'Zero-knowledge rollups on Ethereum provide increased security and privacy.', icon: '/icons/secure.svg' },
+  { title: 'Minimal fees', description: 'Pay 4x lesser fees than trading on other top exchanges', icon: '/icons/minus.svg' },
+  { title: 'Maximum security', description: 'Zero-knowledge rollups on Ethereum provide increased security and privacy', icon: '/icons/secure.svg' },
   { title: 'Instant trades', description: 'Never worry about orders going through again', icon: '/icons/quick.svg' },
 ]
 
