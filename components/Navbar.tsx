@@ -20,7 +20,7 @@ const Navbar = () => {
       <nav className={'flex flex-col md:flex-row items-center justify-between p-4 md:py-8 w-full bg-black/50 backdrop-blur-lg border-b-2 border-gray-700 ' + (dropdown ? 'h-screen md:h-fit' : 'h-fit')}>
         <div className='w-full flex justify-between items-center'>
           <div>
-            <img src="/images/logo.png" alt="" className='h-8 md:h-10 object-center object-cover'/>
+            <img src="/images/logo.jpg" alt="" className='h-8 md:h-10 object-center object-cover'/>
           </div>
           <div className='flex justify-center items-center md:hidden'>
             <div

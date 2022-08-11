@@ -8,12 +8,14 @@ import Section_5 from '../components/Home/Section_5'
 
 const Home: NextPage = () => {
   return (
-    <div className='flex flex-col gap-y-20 md:gap-y-48 w-full'>
-      <Section_1 />
-      {/* <Section_2 /> */}
-      <Section_3 />
-      <Section_4 />
-      <Section_5 />
+    <div>
+      <div className='flex flex-col gap-y-20 md:gap-y-48 w-full'>
+        <Section_1 />
+        {/* <Section_2 /> */}
+        <Section_3 />
+        <Section_4 />
+        <Section_5 />
+      </div>
     </div>
   )
 }
