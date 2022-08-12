@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import notify from '../../utils/notify'
 import PriceActionGraph from './Misc/PriceActionGraph'
@@ -17,6 +18,7 @@ const styles = {
 }
 
 const Section_1 = () => {
+  const router = useRouter()
   return (
     <div className="flex flex-col py-8 md:py-12 h-full md:h-[90vh]">
       <div className='grid grid-cols-1 md:grid-cols-2 w-full h-full gap-y-8 md:gap-y-16'>
@@ -39,12 +41,12 @@ const Section_1 = () => {
               D-Rex is a decentralized derivatives exchange offering <span>Power Perpetuals</span> for your favorite cryptocurrencies
             </p>
           </div>
-          <div className='flex flex-col justify-end h-full md:h-fit w-full md:w-fit'>
+          <div className='flex flex-col justify-end md:h-fit w-full md:w-fit'>
             <button
-              className='text-lg md:text-2xl font-light text-white w-full rounded px-8 py-3 transition-all hover:scale-105 duration-300 ease-in bg-primary hover:shadow-lg hover:shadow-teal-800'
+              className='text-lg md:text-2xl font-light text-white w-fit md:w-full rounded px-8 py-3 transition-all hover:scale-105 duration-300 ease-in bg-primary hover:shadow-lg hover:shadow-teal-800'
               onClick={(e) => {
                 e.preventDefault()
-                notify('Coming soon', 'info')
+                router.push('/#coming-soon')
               }}
             >
               <h4>Join Waitlist</h4>

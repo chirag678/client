@@ -19,7 +19,7 @@ const Section_5 = () => {
         },
       })
       notify(response?.data?.message, 'success')
-      router.push(`${response?.data?.link}`)
+      // router.push(`${response?.data?.link}`)
     } catch (err: any) {
       console.log(err);
       if (err?.response?.data?.message) {
@@ -31,7 +31,7 @@ const Section_5 = () => {
   }
 
   return (
-    <div className="flex flex-col gap-y-10 items-center w-full">
+    <div className="flex flex-col gap-y-10 items-center w-full" id="coming-soon">
       <div className='flex flex-col items-center gap-y-4'>
         <h1 className='text-primary text-3xl md:text-5xl'>Join Our Waitlist</h1>
         <p className='text-zinc-200 text-center md:text-left text-lg md:text-3xl'>Be the first to access the most powerful financial tools</p>

@@ -9,7 +9,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <>
       <Head>
         <title>D Rex</title>
-        <link rel="shortcut icon" href="/images/logo.jpg" />
+        <link rel="shortcut icon" href="/images/logo-transparent.png" />
       </Head>
       <ToastContainer />
       <div className='flex flex-col items-center h-full w-full px-4 md:px-8 text-white'>
