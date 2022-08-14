@@ -12,6 +12,7 @@ module.exports = {
         // 'primary': '#088E8B',
         'primary': '#0ABAB5',
         'secondary': '#4169E1',
+        'tertiary': '#FEC260',
         // 'secondary': '#20252D',
         // violet and black
         // 'primary': 'rgb(124 58 237)',

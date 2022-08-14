@@ -6,10 +6,10 @@ import PriceActionGraph from './Misc/PriceActionGraph'
 // Headings : DeFi -> Derivatives -> NFTs -> Perpetuals -> Crypto
 const headings = [
   { label: 'DeFi', color: 'text-primary' },
-  { label: 'Derivatives', color: 'text-red-500' },
-  { label: 'NFTs', color: 'text-indigo-500' },
-  { label: 'Perpetuals', color: 'text-amber-500' },
-  { label: 'Crypto', color: 'text-violet-500' },
+  { label: 'Derivatives', color: 'text-secondary' },
+  { label: 'NFTs', color: 'text-tertiary' },
+  { label: 'Perpetuals', color: 'text-primary' },
+  { label: 'Crypto', color: 'text-secondary' },
   { label: 'DeFi', color: 'text-primary' },
 ]
 
@@ -41,9 +41,12 @@ const Section_1 = () => {
               D-Rex is a decentralized derivatives exchange offering <span>Power Perpetuals</span> for your favorite cryptocurrencies
             </p>
           </div>
+          <div className='flex md:hidden flex-col w-full h-[300px] justify-start p-2 bg-red-1000'>
+            <PriceActionGraph options={mobileOptions} />
+          </div>
           <div className='flex flex-col justify-end md:h-fit w-full md:w-fit'>
             <button
-              className='text-lg md:text-2xl font-light text-white w-fit md:w-full rounded px-8 py-3 transition-all hover:scale-105 duration-300 ease-in bg-primary hover:shadow-lg hover:shadow-teal-800'
+              className='text-lg md:text-2xl font-light text-white w-full rounded px-8 py-3 transition-all hover:scale-105 duration-300 ease-in bg-primary hover:shadow-lg hover:shadow-teal-800'
               onClick={(e) => {
                 e.preventDefault()
                 router.push('/#coming-soon')
@@ -55,9 +58,6 @@ const Section_1 = () => {
         </div>
         <div className='hidden md:flex flex-col w-[600px] h-[500px] justify-start p-2 bg-red-1000'>
           <PriceActionGraph options={options} />
-        </div>
-        <div className='flex md:hidden flex-col w-full h-[300px] justify-start mt-12 p-2 bg-red-1000'>
-          <PriceActionGraph options={mobileOptions} />
         </div>
       </div>
     </div>
@@ -97,6 +97,7 @@ const options = {
       },
     },
     y: {
+      min: -400,
       display: true,
       title: {
         display: true,
@@ -137,17 +138,6 @@ const options = {
         color: 'white',
       },
     },
-    // title: {
-    //   display: true,
-    //   text: 'Chart.js Line Chart',
-    //   color: 'white',
-    //   font: {
-    //     family: 'Comic Sans MS',
-    //     size: 20,
-    //     weight: 'bold',
-    //     lineHeight: 1.2,
-    //   },
-    // },
   },
 };
 
@@ -184,6 +174,7 @@ const mobileOptions = {
       },
     },
     y: {
+      min: -400,
       display: true,
       title: {
         display: true,

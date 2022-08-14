@@ -19,6 +19,7 @@ const Section_5 = () => {
         },
       })
       notify(response?.data?.message, 'success')
+      setEmail('');
       // router.push(`${response?.data?.link}`)
     } catch (err: any) {
       console.log(err);
