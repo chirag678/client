@@ -41,12 +41,9 @@ const Section_1 = () => {
               D-Rex is a decentralized derivatives exchange offering <span>Power Perpetuals</span> for your favorite cryptocurrencies
             </p>
           </div>
-          <div className='flex md:hidden flex-col w-full h-[300px] justify-start p-2 bg-red-1000'>
-            <PriceActionGraph options={mobileOptions} />
-          </div>
           <div className='flex flex-col justify-end md:h-fit w-full md:w-fit'>
             <button
-              className='text-lg md:text-2xl font-light text-white w-full rounded px-8 py-3 transition-all hover:scale-105 duration-300 ease-in bg-primary hover:shadow-lg hover:shadow-teal-800'
+              className='text-lg md:text-2xl font-light text-white w-fit md:w-full rounded px-8 py-3 transition-all hover:scale-105 duration-300 ease-in bg-primary hover:shadow-lg hover:shadow-teal-800'
               onClick={(e) => {
                 e.preventDefault()
                 router.push('/#coming-soon')
@@ -58,6 +55,9 @@ const Section_1 = () => {
         </div>
         <div className='hidden md:flex flex-col w-[600px] h-[500px] justify-start p-2 bg-red-1000'>
           <PriceActionGraph options={options} />
+        </div>
+        <div className='flex md:hidden flex-col w-full h-[300px] justify-start mt-12 p-2 bg-red-1000'>
+          <PriceActionGraph options={mobileOptions} />
         </div>
       </div>
     </div>
