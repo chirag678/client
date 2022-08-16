@@ -1,16 +1,15 @@
 import axios from 'axios'
 import { useRouter } from 'next/router';
-import React, { useState } from 'react'
-import notify from '../../utils/notify'
+import React, { useState } from 'react';
+import { notifyPromise, notifyResolve } from '../../utils/notify'
 
 // page to invite users to join the waitlist
 
 const Section_5 = () => {
   const [email, setEmail] = useState('');
   const router = useRouter();
-
   const registerForWaitlist = async (e: any) => {
-    console.log(process.env.API);
+    const id = notifyPromise('Registering...');
     e.preventDefault();
     try {
       const response = await axios.post('/backend/waitlist/register', {
@@ -18,15 +17,14 @@ const Section_5 = () => {
           email: email,
         },
       })
-      notify(response?.data?.message, 'success')
       setEmail('');
-      // router.push(`${response?.data?.link}`)
+      notifyResolve(id, response?.data?.message, 'success');
     } catch (err: any) {
       console.log(err);
       if (err?.response?.data?.message) {
-        notify(err?.response?.data?.message, 'error');
+        notifyResolve(id, err?.response?.data?.message, 'error');
       } else {
-        notify(err.message, 'error');
+        notifyResolve(id, err?.message, 'error');
       }
     }
   }

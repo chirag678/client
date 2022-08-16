@@ -8,7 +8,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>D Rex</title>
+        <title>D-Rex</title>
         <link rel="shortcut icon" href="/images/logo-transparent.png" />
       </Head>
       <ToastContainer />
