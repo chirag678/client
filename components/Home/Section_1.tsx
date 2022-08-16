@@ -54,9 +54,9 @@ const Section_1 = () => {
               <h4>Join Waitlist</h4>
             </button>
           </div>
-          <div className="h-full opacity-50 -z-10 md:hidden">
+          {/* <div className="h-full opacity-50 -z-10 md:hidden">
             <video src="https://static.vecteezy.com/system/resources/previews/002/007/846/mp4/shiny-wave-futuristic-technology-animation-abstract-background-free-video.mp4" loop autoPlay muted></video>
-          </div>
+          </div> */}
         </div>
         <div className='hidden md:flex flex-col w-[600px] h-[500px] justify-start p-2 bg-red-1000'>
           <PriceActionGraph options={options} />
