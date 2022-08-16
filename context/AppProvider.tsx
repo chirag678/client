@@ -49,7 +49,7 @@ const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
   useEffect(() => {
     // @ts-ignore
-    window.ethereum.on("accountsChanged", function (accounts: String) {
+    window?.ethereum?.on("accountsChanged", function (accounts: String) {
       dispatch({ type: ActionKind.SET_USER, payload: accounts[0] });
     });
   }, []);
