@@ -158,7 +158,7 @@ const mobileOptions = {
         text: '% Change in Price',
         color: 'white',
         font: {
-          family: 'Comic Sans MS',
+          family: 'Quantico',
           size: 15,
           weight: 'bold',
           lineHeight: 1.2,
@@ -186,7 +186,7 @@ const mobileOptions = {
         text: '% Return',
         color: 'white',
         font: {
-          family: 'Comic Sans MS',
+          family: 'Quantico',
           size: 15,
           weight: 'bold',
           lineHeight: 1.2,
@@ -212,7 +212,7 @@ const mobileOptions = {
       position: 'top' as const,
       labels: {
         font: {
-          family: 'Comic Sans MS',
+          family: 'Quantico',
           size: 12,
           weight: 'bold',
           lineHeight: 1.2,
