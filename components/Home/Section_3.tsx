@@ -3,7 +3,7 @@ import CardShuffle from "./3D/CardShuffle";
 
 export default function Section_3() {
   return (
-    <div className="flex flex-col rounded-xl mt-0 md:-mt-28 -mb-52 md:-mb-72 h-[90vh]">
+    <div className="flex flex-col rounded-xl mt-0 md:-mt-28 -mb-72 h-[90vh]">
       <div className="text-center -mb-32">
         <h1 className="text-3xl md:text-5xl text-white -mb-12 md:mb-0">Evolution of Perpetual Swaps</h1>
       </div>
