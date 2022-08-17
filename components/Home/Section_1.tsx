@@ -24,8 +24,8 @@ const Section_1 = () => {
   return (
     <div className="flex flex-col py-8 md:py-12 h-full md:h-[90vh]">
       <div className='grid grid-cols-1 md:grid-cols-2 w-full h-full gap-y-8 md:gap-y-16'>
-        <div className='relative flex flex-col gap-y-8 h-[80vh] md:h-fit'>
-          <div className='flex flex-col tracking-wider font gap-y-2 text-[2.5rem] md:text-7xl'>
+        <div className='relative flex flex-col gap-y-8 h-fit'>
+          <div className='flex flex-col tracking-wider font gap-y-4 text-[2.5rem] md:text-7xl'>
             <h1>Maximize</h1>
             <h1>the potential</h1>
             <h1 className='scroller'>of&nbsp; <span className='font-light'>{headings.map((heading, index) => {
