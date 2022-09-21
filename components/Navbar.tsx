@@ -3,12 +3,11 @@ import React from 'react'
 import Home from '../pages'
 import notify from '../utils/notify'
 
-// Header: Home  About  Docs  Governance  Community  Trade
+// Header: Home  About  Docs  Community  Trade
 const headers = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/#' },
   { label: 'Docs', href: '/#' },
-  { label: 'Governance', href: '/#' },
   { label: 'Community', href: '/#' },
 ]
 
