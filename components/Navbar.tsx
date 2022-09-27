@@ -7,8 +7,8 @@ import notify from '../utils/notify'
 const headers = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/#' },
-  { label: 'Docs', href: '/#' },
-  { label: 'Community', href: '/#' },
+  { label: 'Docs', href: 'https://docs.google.com/document/d/1rafYJwM2TWJVFifehBzTQOE5zmkxsGHpovpbPVMuz2o/edit?usp=sharing' },
+  { label: 'Community', href: 'https://twitter.com/DRexProtocol' },
 ]
 
 const Navbar = () => {
