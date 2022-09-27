@@ -7,8 +7,8 @@ import notify from '../utils/notify'
 const headers = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/#' },
-  { label: 'Docs', href: 'https://docs.google.com/document/d/1rafYJwM2TWJVFifehBzTQOE5zmkxsGHpovpbPVMuz2o/edit?usp=sharing', target: '_blank' },
-  { label: 'Community', href: 'https://twitter.com/DRexProtocol', target: '_blank' }
+  { label: 'Docs', href: 'https://docs.google.com/document/d/1rafYJwM2TWJVFifehBzTQOE5zmkxsGHpovpbPVMuz2o/edit?usp=sharing', window.open('https://docs.google.com/document/d/1rafYJwM2TWJVFifehBzTQOE5zmkxsGHpovpbPVMuz2o/edit?usp=sharing', '_blank') },
+  { label: 'Community', href: 'https://twitter.com/DRexProtocol', window.open('https://twitter.com/DRexProtocol', '_blank'); }
 ]
 
 const Navbar = () => {
