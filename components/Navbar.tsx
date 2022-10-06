@@ -85,6 +85,16 @@ const NavElements = () => {
           {label}
         </a>
       ))}
+
+      {headers2.map(({ label, href }, index) => (
+        <a
+          key={index}
+          href={href}
+        >
+          {label}
+        </a>
+      ))}
+      
       <a
         href='#'
         className='text-white text-center font-semibold bg-primary hover:scale-105 py-2 px-4 rounded w-full md:w-fit justify-self-end'
