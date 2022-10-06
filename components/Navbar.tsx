@@ -3,12 +3,16 @@ import React from 'react'
 import Home from '../pages'
 import notify from '../utils/notify'
 
-// Header: Home  About  Docs  Community  Trade
+// Headers: Home  About  Trade
 const headers = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/#' },
-  { label: 'Docs', href: 'https://docs.google.com/document/d/1rafYJwM2TWJVFifehBzTQOE5zmkxsGHpovpbPVMuz2o/edit?usp=sharing', target: '_blank' },
-  { label: 'Community', href: 'https://twitter.com/DRexProtocol', target: '_blank' }
+]
+
+// Headers2: Docs  Community
+const headers2 = [
+  { label: 'Docs', href: 'https://docs.google.com/document/d/1rafYJwM2TWJVFifehBzTQOE5zmkxsGHpovpbPVMuz2o/edit?usp=sharing'},
+  { label: 'Community', href: 'https://twitter.com/DRexProtocol'}
 ]
 
 const Navbar = () => {
