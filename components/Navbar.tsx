@@ -92,7 +92,7 @@ const NavElements = () => {
           href={href}
           className={'hover:scale-105 font-semibold w-full text-center ' + (router.pathname === href ? 'bg-primary/50 md:bg-primary/0 text-white p-3 md:p-0 rounded-lg' : 'text-gray-200 hover:text-white ')}
           onClick={(e) => {
-            window.open(href)
+            window.open(href), return false
           }}
         >
           {label}
