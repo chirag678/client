@@ -1,27 +1,27 @@
-# Next.js + Tailwind CSS Example
+# Hey there!
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+### Welcome to D-Rex
 
-## Deploy your own
+A composable DEX offering power perps for your favorite cryptocurrencies.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+Our DEX is powered by an on-chain limit order book on StarkNet (a layer 2 zk rollup on Ethereum) which is composable and has shared liquidity, significantly reducing the project development life-cycle and leading to more efficient markets. We envision multiple dApps using the order book as their architecture, creating a new DeFi ecosystem on Ethereum.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+### Architecture
+D-Rex uses a layer two zero-knowledge (zk) rollup on Ethereum, or L2 for short. Transactions on Ethereum will only occur for deposits and withdrawals if users do not have funds on the L2 network. All activities on L2 are batched and sent to a sequencer to create zk cryptographic proofs. These proofs are periodically sent to an Ethereum smart contract, and on-chain verifiers perform their validity. 
 
-## How to use
+### Tokenomics
+DRX is the governance, utility, and liquidity token of D-Rex. The total supply of DRX is 210,000,000 and will be distributed as follows:
+* 50% - Community 
+* 20% - D-Rex Foundation
+* 15% - Ecosystem partners
+* 15% - Project team
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Watch it live
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+Here's the link to our website. It's currently live. 
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+[![Deploy with Vercel](https://vercel.com/button)](https://www.drextrade.com/)
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+##
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Explore the website. Sign up and kindly join our waitlist to be among the very select few who get rewarded with exclusive NFTs, right before our launch.
